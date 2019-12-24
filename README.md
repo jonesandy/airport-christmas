@@ -1,9 +1,8 @@
 # Holidays Airport
 <img src="./_imgs/plane.png" align="right" />
-![](https://img.shields.io/badge/Practice-Makers%20Academy-red)
-[![Build Status](https://travis-ci.com/jonesandy/airport-christmas.svg?branch=master)](https://travis-ci.com/jonesandy/airport-christmas)
-[![Maintainability](https://api.codeclimate.com/v1/badges/c8319d3ee6035cba9579/maintainability)](https://codeclimate.com/github/jonesandy/airport-christmas/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/c8319d3ee6035cba9579/test_coverage)](https://codeclimate.com/github/jonesandy/airport-christmas/test_coverage)
+![](https://img.shields.io/badge/Practice-Makers%20Academy-red) [![Build Status](https://travis-ci.com/jonesandy/airport-christmas.svg?branch=master)](https://travis-ci.com/jonesandy/airport-christmas) [![Maintainability](https://api.codeclimate.com/v1/badges/c8319d3ee6035cba9579/maintainability)](https://codeclimate.com/github/jonesandy/airport-christmas/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/c8319d3ee6035cba9579/test_coverage)](https://codeclimate.com/github/jonesandy/airport-christmas/test_coverage)
+
+
 
 ---
 This program mimicks the simple behaviour of an airport and a plane class. They interact and the plane can land and take off. This is a weekend test from the Makers Academy course. 
