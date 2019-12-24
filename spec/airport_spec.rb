@@ -20,6 +20,14 @@ describe Airport do
         expect(jet).to have_received(:landed)
       end
 
+      it 'raises error when full' do
+      
+        plane = double("Plane", :landed => false)
+  
+        Airport::DEFAULT_CAPACITY.times { heathrow.land(plane) }
+        expect { heathrow.land(plane) }.to raise_error "Can't land aiport full!"
+      end
+
     end
 
     describe '#take_off' do
