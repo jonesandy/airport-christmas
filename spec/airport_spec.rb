@@ -3,7 +3,7 @@ require 'airport'
 describe Airport do
 
   subject(:heathrow) { described_class.new }
-  let(:plane) { double :plane, :landed => false }
+  let(:plane) { double :plane, :landed => false}
 
   context 'nice weather' do
 
@@ -18,6 +18,27 @@ describe Airport do
         heathrow.land(jet)
 
         expect(jet).to have_received(:landed)
+      end
+
+    end
+
+    describe '#take_off' do
+
+      it 'should take off a plane' do
+        plane2 = double(:plane, :landed => false, :take_off => true )
+
+        heathrow.land(plane)
+        heathrow.land(plane2)
+
+        expect(heathrow.take_off(plane2)).to eq(plane2)
+      end
+
+      it 'should call # on plane' do
+        jet = spy('Plane')
+        heathrow.land(jet)
+        heathrow.take_off(jet)
+
+        expect(jet).to have_received(:take_off)
       end
 
     end

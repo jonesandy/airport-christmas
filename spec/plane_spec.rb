@@ -11,7 +11,19 @@ describe Plane do
   describe '#landed' do
     
     it 'returns true' do
-      expect(plane.landed).to eq(false)
+      plane.send(:landed)
+
+      expect(plane).not_to be_flying
+    end
+
+  end
+
+  describe '#take_off' do
+    
+    it 'returns false' do
+      plane.send(:take_off)
+
+      expect(plane).to be_flying
     end
 
   end
