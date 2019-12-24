@@ -10,7 +10,7 @@ class Airport
   end
 
   def take_off(plane)
-    plane.take_off
+    plane.send(:take_off)
     @planes.delete(plane)
   end
 
