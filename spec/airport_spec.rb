@@ -25,7 +25,7 @@ describe Airport do
         plane = double("Plane", :landed => false)
   
         Airport::DEFAULT_CAPACITY.times { heathrow.land(plane) }
-        expect { heathrow.land(plane) }.to raise_error "Can't land aiport full!"
+        expect { heathrow.land(plane) }.to raise_error "Can't land airport full!"
       end
 
     end

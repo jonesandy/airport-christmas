@@ -8,7 +8,7 @@ class Airport
   end
 
   def land(plane)
-    raise "Can't land aiport full!" if full?
+    raise "Can't land airport full!" if full?
 
     plane.send(:landed)
     @planes << plane
