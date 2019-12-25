@@ -72,3 +72,36 @@ As an air traffic controller
 To ensure safety 
 I want to prevent landing when weather is stormy 
 ```
+
+## Usage
+
+Program runs in IRB. To load IRB open a terminal window.
+
+```bash
+# Type irb into terminal
+irb
+
+# At the prompt require_relative the main file
+2.6.5 :001 > require_relative './lib/airport.rb'
+
+```
+
+Airports and planes can then be created.
+
+```bash
+airport = Airport.new
+plane = Plane.new
+
+airport.land(plane) # To land a plane.
+airport.take_off(plane) # To take off a plane.
+
+```
+
+## Tests
+
+To run tests, make sure you are in the root folder, then run RSpec.
+
+```bash
+# Inside root folder
+rspec
+```
