@@ -1,6 +1,6 @@
 <img src="./_imgs/plane.png" align="right" />
 
-# Holidays Airport
+# Holiday Airport
 
 ![](https://img.shields.io/badge/Practice-Makers%20Academy-red)
 [![Build Status](https://travis-ci.com/jonesandy/airport-christmas.svg?branch=master)](https://travis-ci.com/jonesandy/airport-christmas)
@@ -9,7 +9,7 @@
 
 
 ---
-This program mimicks the simple behaviour of an airport and a plane class. They interact and the plane can land and take off. This is a weekend test from the Makers Academy course. 
+This program mimics the simple behaviour of an airport and a plane class. They interact and the plane can land and take off. This is a weekend test from the Makers Academy course. 
 
 We have a request from a client to write the software to control the flow of planes at an airport. The planes can land and take off provided that the weather is sunny. Occasionally it may be stormy, in which case no planes can land or take off.
 
