@@ -3,7 +3,7 @@ require 'airport'
 describe Airport do
 
   subject(:heathrow) { described_class.new }
-  let(:plane) { double :plane, :landed => false}
+  let(:plane) { double :plane, :landed => false }
 
   context 'nice weather' do
 
@@ -33,7 +33,7 @@ describe Airport do
     describe '#take_off' do
 
       it 'should take off a plane' do
-        plane2 = double(:plane, :landed => false, :take_off => true )
+        plane2 = double(:plane, :landed => false, :take_off => true)
 
         heathrow.land(plane)
         heathrow.land(plane2)
