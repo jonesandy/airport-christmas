@@ -1,7 +1,7 @@
 class Weather 
 
   def stormy?
-    [true, true, true, false].sample
+    [false, false, false, true].sample
   end
 
 end

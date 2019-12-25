@@ -7,13 +7,13 @@ describe Weather do
     let(:weather) { described_class.new }
     
     it 'returns false if sunny' do
-      srand(5)
+      srand(4)
       
       expect(weather.stormy?).to eq(false)
     end
 
-    it 'returns true if stormy' do
-      srand(4)
+    it 'returns true if stormy' do    
+      srand(5)
 
       expect(weather.stormy?).to eq(true)
     end
