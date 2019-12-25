@@ -3,7 +3,7 @@ require 'airport'
 describe Airport do
 
   subject(:heathrow) { described_class.new }
-  let(:plane) { double :plane, :landed => false }
+  let(:plane) { double :plane, :landed => false , :take_off => true}
 
   context 'nice weather' do
 
@@ -43,6 +43,13 @@ describe Airport do
         heathrow.land(plane2)
 
         expect(heathrow.take_off(plane2)).to eq(plane2)
+      end
+
+      it 'should not take off a plane when not in airport' do
+        heathrow.land(plane)
+        heathrow.take_off(plane)
+
+        expect { heathrow.take_off(plane) }.to raise_error "Plane is not in the airport!"
       end
 
       it 'should call #take_off on plane' do

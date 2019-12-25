@@ -21,6 +21,7 @@ class Airport
 
   def take_off(plane)
     raise "Can't take off weather is stormy!" if stormy?
+    raise "Plane is not in the airport!" if !@planes.include?(plane)
 
     plane.send(:take_off)
     @planes.delete(plane)
